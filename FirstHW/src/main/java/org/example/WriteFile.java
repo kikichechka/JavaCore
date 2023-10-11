@@ -1,6 +1,5 @@
 package org.example;
 
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -40,7 +39,7 @@ public class WriteFile {
                 FileWriter writer = new FileWriter(file, true);
                 writer.write(formatForDateNow.format(date) + note.getNote() + "\n");
                 writer.close();
-                System.out.println("Запись в файл успешна завершена");
+                System.out.println("Запись в файл успешно завершена");
             } catch (IOException | NullPointerException e) {
                 System.out.println("Ошибка при записи в файл");
             }
